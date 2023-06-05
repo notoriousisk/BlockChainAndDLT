@@ -18,14 +18,12 @@ UPDATE accounts SET credit = credit - 500
 	WHERE id = 1;
 UPDATE accounts SET credit = credit + 500
 	WHERE id = 3;
-
 -- T2 --
 SAVEPOINT t2_savepoint;
 UPDATE accounts SET credit = credit - 700
 	WHERE id = 2;
 UPDATE accounts SET credit = credit + 700
-	WHERE id = 1;
-	
+	WHERE id = 1;	
 -- T3 --
 SAVEPOINT t3_savepoint;
 UPDATE accounts SET credit = credit - 100
@@ -49,9 +47,6 @@ UPDATE accounts SET credit = credit - 500
 	WHERE id = 1;
 UPDATE accounts SET credit = credit + 500
 	WHERE id = 3;
-
-
-
 -- T2 --
 SAVEPOINT t2_savepoint;
 UPDATE accounts SET credit = credit - 700
@@ -60,9 +55,6 @@ UPDATE accounts SET credit = credit + 670
 	WHERE id = 1;
 UPDATE accounts SET credit = credit + 30
 	WHERE id = 4;
-
-
-
 -- T3 --
 SAVEPOINT t3_savepoint;
 UPDATE accounts SET credit = credit - 100
