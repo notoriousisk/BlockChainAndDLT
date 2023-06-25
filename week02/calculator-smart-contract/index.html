@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <script src='node_modules/web3/dist/web3.min.js'></script>
+</head>
+<body>
+    <h1>Calculator Smart Contract</h1>
+
+    <label for="x">X:</label>
+    <input type="number" id="x" placeholder="Enter X">
+
+    <label for="y">Y:</label>
+    <input type="number" id="y" placeholder="Enter Y">
+
+    <button onclick="add()">Add</button>
+    <button onclick="subtract()">Subtract</button>
+    <button onclick="multiply()">Multiply</button>
+    <button onclick="divide()">Divide</button>
+
+    <h2>Result:</h2>
+    <p id="result"></p>
+
+    <script src="index.js"></script>
+
+</body>
+</html>
