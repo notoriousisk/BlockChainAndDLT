@@ -4,7 +4,7 @@ pragma solidity ^0.8.0;
 import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
 import "@openzeppelin/contracts/utils/Counters.sol";
 
-contract TokenMarketplace is ERC721 {
+contract ThousandLogos is ERC721 {
     uint256 private constant MAX_TOKENS = 1000;
     uint256 private constant TOKEN_PRICE = 0.001 ether;
     
